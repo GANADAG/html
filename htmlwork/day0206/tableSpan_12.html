@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tb2{
+            width: 400px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+        .tb2 td,.tb2 th{
+            border: 1px solid green;
+        }
+        .tb3{
+            width: 400px;
+            border: 1px solid gray;
+           
+        }
+        .tb4{
+            width: 350px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+           .tb4 td,.tb4 th{
+            border: 1px solid green;
+        }
+        }
+        .tb4 td,.tb4 th{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>                <!--width="300"-->
+    <table border="1" style="width: 300px;">
+        <caption>[표1]</caption>
+        <tr height="50">
+            <!--ㄴ한줄 -->
+            <td align="center">one</td>
+            <!-- ㄴ한칸 -->
+            <td align="center">two</td>
+            <td align="center">three</td>
+        </tr>
+            <tr align="center" height="50">
+                <td colspan="3">
+                    3칸 합침
+                </td>
+            </tr>
+        
+    </table>
+    <hr>
+    <table class="tb2">
+        <caption><b>[표2]</b></caption>
+        <tr height="40">
+            <th>사진</th>
+            <th>이름</th>
+            <th>주소</th>
+            <th>핸드폰</th>
+        </tr>
+        <tr>
+            <td rowspan="3" align="center">
+                <img src="../image/flower_ani/f11.png" width="100">
+            </td>
+            <td>박보영</td><td>충남 아산시</td><td>02-999-3333</td>
+        </tr>
+        <tr>
+            <td>김수경</td><td>서울 강남구</td><td>02-222-1111</td>
+        </tr>
+        <tr>
+            <td>손흥민</td><td>제주 서귀포</td><td>032-122-3333</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- 밑줄 -->
+    <table border="1" style="width: 600px;">
+        <caption><b>[표3]</b></caption>
+        <tr height="40">
+            <td rowspan="3" align="center">1</td>
+            <td colspan="3" align="center">2</td>
+        </tr>
+        <tr height="40">
+            <td colspan="3" align="center">3</td>    
+        </tr>
+        <tr height="40">
+            <td colspan="2" align="center">4</td>
+            <td rowspan="2" align="center">5</td>
+        </tr>
+        <tr height="40">
+            <td colspan="3" align="center">6</td>
+        </tr>
+
+    </table>
+    <!-- <hr> 
+    <table border="1" style="width: 600px;">
+        <caption><b>[표4]</b></caption>
+        <tr>
+            <td rowspan="3" align="center">
+                <img src="../image/flower_ani/f13.png" width="50">
+            </td>
+            <td>a</td><td>b</td><td>c</td>
+        </tr>
+        <tr>
+            <td>a</td><td>b</td><td>c</td>
+        </tr>
+        <tr>
+            <td>a</td><td>b</td><td>c</td>
+        </tr>-->
+    <hr>
+<table class="tb4">
+    <caption><b>[표4]</b></caption>
+    <tr>
+        <th width="100">이름</th>
+        <th width="100">사진</th>
+        <th width="100">개인정보</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3" align="center">거북이</td>
+        <td rowspan="3">
+            <img src="../image/logoImg/logoImg/profile-picture.png" width="100">
+        </td>
+        <td align="center">
+            010-111-2222
+        </td>
+    </tr>
+    <tr>
+        <td align="center">경제학과</td>
+    </tr>
+    <tr>
+        <td align="center">4학년</td>
+    </tr>
+
+    </table>
+</body>
+</html>

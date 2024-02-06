@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid gray;
+            border-collapse: collapse;
+            /* 칸과 칸 사이 여백 없어짐 칸은 두줄짜리가 디폴트*/
+        }
+        tr,th,td{
+            border: 1px dotted green;
+           
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <!-- border 테두리 -->
+        <thead>
+            <!-- 제목부분..한 번만 옴 코드에 영향을 미치지 않음..시멘틱태그-->
+            <tr>
+                <!-- tr은 하나의 행을 의미 -->
+                <th>이름</th> <!--th는 제목을 쓸 때-->
+                <th>학과</th>
+                <th>학년</th>
+                <th>주소</th> 
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>강동원</td>
+                <td>컴공과</td>
+                <td>2</td>
+                <td>서울시 서초구</td>
+            </tr>
+            <tr>
+                <td>이하늘</td>
+                <td>영어영문과</td>
+                <td>3</td>
+                <td>서울시 강동구 길동</td>
+            </tr>
+            <tr>
+                <td>김하경</td>
+                <td>유아교육과</td>
+                <td>2</td>
+                <td>서울시 강남구</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>

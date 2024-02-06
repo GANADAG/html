@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myimg1{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 3px solid orange;
+        }
+        #myimg2{
+            /* 상대적 */
+            position: relative;
+            left: 100px;
+            top: 200px;
+            width: 200px;
+        }
+        #myimg3{
+            position: absolute;
+            left: 800px;
+            top: 150px;
+            width: 200px;
+        }
+        #myimg4{
+           width: 300px;
+           height: 300px;
+           background-image: url(../image/logoImg/logoImg/toy06.png);
+           background-repeat: no-repeat;
+            /*사진 커서 여러개 일때 하나만 나타나게  */
+        }
+
+        /* 마우스 클릭시 이미지 변경 */
+        #myimg4:active{
+            /* active 클릭 */
+            background-image: url(../image/logoImg/logoImg/toy03.png);
+        }
+
+        /* 마우스 올려놨을 때 이미지 변경 */
+        #myimg4:hover{
+            background-image: url(../image/logoImg/logoImg/toy04.png);
+            background-size: 150px 150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 타이틀: 마우스커서 가져다댔을때 나오는문구 -->
+    <img alt="이미지없음1" src="../image/쇼핑몰사진/쇼핑몰사진/14.jpg" title="단화들" id="myimg1">
+    <img alt="이미지없음1" src="../image/logoImg/logoImg/acc01.png" title="시계" id="myimg2">
+    <img alt="이미지없음1" src="../image/쇼핑몰사진/쇼핑몰사진/17.jpg" title="신발" id="myimg3">
+    <div id="myimg4"></div>
+</body>
+</html>
