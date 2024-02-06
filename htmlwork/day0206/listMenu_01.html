@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 바로 밑 하위태그 */
+        ul.menu>li{
+            list-style: none;
+            float: left; 
+            /* 왼쪽으로정렬 */
+            width: 170px;
+            height: 60px;
+            border: 1px solid gray;
+            text-align: center;
+            line-height: 60px;
+            /* 세로가운데정렬 */
+            margin-right: 10px;
+            /* 칸 간격 */
+            background-color: aquamarine;
+            color: black;
+            border-radius: 20px;
+            /* 테두리 둥글게 */
+        }
+        /* 마우스커서 올렸을 때 나타나는 효과 */
+        ul.menu li:hover{
+            background-color: beige;
+            color: gray;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px gray;
+        }
+    </style>
+</head>
+<body>
+    <h3>ul을 이용한 간단한 메뉴 만들기</h3>
+    <br>
+    <ul class="menu"> 
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Q&A</li> 
+        <li>고객 게시판</li>
+        <li>오시는 길</li>
+    </ul>
+</body>
+</html>

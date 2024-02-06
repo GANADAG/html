@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .은 클래스를 의미 >하위태그의미 */
+        img.photo{
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            border-radius: 100px;
+        }
+        
+        b.acc{
+            font-size: 20px;
+            font-family: '궁서체';
+            color: blueviolet;
+            margin-left: 70px;
+        }
+
+        div.a{
+            font-size: 2em;
+            font-family: 'Times new roman','Times',serif;
+            margin-top: 50px;
+            line-height: 2em;
+        }
+
+        div.b>figure{
+            float: left; /*가로방향 정렬*/
+        }
+
+        div.b>figure>img{
+            border: 1px solid gray;
+            border-radius: 20px 20px 20px 20px;/*왼쪽 상단 모서리부터 시계방향*/
+        }
+        div.b>figure>figcaption>b{
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        hr.c{
+            clear: both;/*float: left; 속성 해제*/
+        }
+        
+        div.d{
+            width: 700px;
+            height: 300px;
+            border: 1px solid grey;
+            margin-left: 250px;
+        }
+        div.d{
+            display: flex;
+            flex-direction: row; /*우측정렬 가로방향..거꾸로 우측정렬은 row-reverse*/
+        }
+        div.d{
+            border: 1px solid gray;
+            border-radius: 20px 20px 20px 20px;
+        }
+        div.d>figure{
+            float: right; /*가로방향 정렬*/
+        }
+        div.d>figure>img{
+            border: 1px solid gray;
+            border-radius: 100px;
+        }
+        div.d>figure>figcaption>d{
+            font-size: 15px;
+            margin-left: 50px;
+            text-decoration: underline;
+        }
+      
+    </style>
+</head>
+<body>
+    <img src="../image/logoImg/logoImg/acc01.png" class="photo">
+    <br>
+    <b class="acc">손목시계</b> 
+    <hr>
+    <img src="../image/쇼핑몰사진/쇼핑몰사진/11.jpg" width="200" border="10" align="left" hspace="20">
+    <div class="a">플랫슈즈<br>러닝화<br>부츠<br></div>
+    <br>
+
+    <div class="b">
+        <figure>
+            <img src="../image/logoImg/logoImg/bag01.png" width="150">
+            <figcaption><b>블랙토트백</b></figcaption>
+        </figure>
+
+        <figure>
+            <img src="../image/logoImg/logoImg/bag02.png" width="150">
+            <figcaption><b>그레이토트백</b></figcaption>
+        </figure>
+
+        <figure>
+            <img src="../image/logoImg/logoImg/bag03.png" width="150">
+            <figcaption><b>구찌토트백</b></figcaption>
+        </figure>
+        
+        <hr class="C"></hr>
+
+        <div class="d">
+            <figure>
+                <img src="../image/쇼핑몰사진/쇼핑몰사진/10.jpg" width="150">
+                <figcaption><d>스카프</d></figcaption>
+            </figure>
+
+            <figure>
+                <img src="../image/쇼핑몰사진/쇼핑몰사진/11.jpg" width="150">
+                <figcaption><d>단화</d></figcaption>
+            </figure>
+
+            <figure>
+                <img src="../image/쇼핑몰사진/쇼핑몰사진/12.jpg" width="150">
+                <figcaption><d>플랫슈즈</d></figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>

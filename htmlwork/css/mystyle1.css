@@ -1,0 +1,24 @@
+#box{
+    background-color: #ff9999;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    /* 중심 */
+    color: #ffffff;
+}
+
+#box h1{
+    text-align: center;
+    padding-top: 50px;
+    /* 윗부분 제목 공간띄어줌 */
+}
+
+#box p{
+    text-align: center;
+}
+
+#box ul li{
+    padding-left: 100px;
+    list-style: none;
+
+}

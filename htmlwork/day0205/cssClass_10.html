@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css영역 */
+        .happy{
+            /* 어떤 클래스간에 해피영역 모두 포함..전체태그에 적용 */
+            color: aqua;
+            font-size: 30px;
+            font-family: 'Comic Sans Ms';
+        }
+            /* b태그에서만 적용되는 클래스 */
+        b.nice{  
+            color: black;
+            text-decoration: underline;
+
+        }
+        img.imga{
+            width: 150px;
+            height: 150px;
+            border: 10px groove gray;
+            margin-left: 200px; /*태그밖 왼쪽여백*/
+            border-radius: 100px;
+
+        }
+        .imgb{
+            width: 200px;
+            height: 200px;
+            box-shadow: 5px 5px 5px gray; /*그림자효과*/
+            border-radius: 30px 50px 20px;   /*테두리 모서리 둥근효과*/
+        }
+    </style>
+</head>
+<body>
+    <font Font="5" color="red">Font Tag!!</font><br>
+    <span style="color: magenta; font-size: 2em;">SpanTag!!</span><br>
+    <span style="border: 3px solid green;">안녕하세요</span>
+    <div class="happy nice">
+        Div Tag!!
+    </div>
+    <div class="happy">Div Tag#2!!</div>
+    <b class="happy nice">B Tag!! 굵게 속성이 포함된태그</b>
+    <br>
+    <img src="../image/Food/12.jpg" alt="찌개사진이 없을시" title="마우스 가져다대면 순두부 라면입니다 라고 뜹니다" class="imga">
+    <br>
+    <img src="../image/쇼핑몰사진/쇼핑몰사진/12.jpg" title="플랫슈즈" class="imgb">
+</body>
+</html>

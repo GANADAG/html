@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-color: aquamarine;
+        }
+
+        div{
+            width: 400px;
+            height: 250px;
+            border: 1px solid gray;
+            margin-bottom: 20px;
+            margin-left: 100px;
+            background-size: 50px 70px;
+        }
+
+        div.a{
+            background-image: url(../image/logoImg/logoImg/acc01.png);   
+        }
+        div.b{
+            background-image: url(../image/logoImg/logoImg/a04.png);
+            background-repeat: repeat-x;
+            /* x축만 나옴 */
+        }
+        div.c{
+            background-image: url(../image/logoImg/logoImg/a05.png);
+            background-repeat: repeat-y;
+            /* y축만 나옴 */
+        }
+        div.d{
+            background-image: url(../image/logoImg/logoImg/a06.png);
+            background-repeat: no-repeat;
+            background-position: 200px 100px;
+            /* 위치조절가능 */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 공간나눌때 div -->
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c bg"></div>
+    <div class="d"></div>
+
+</body>
+</html>
