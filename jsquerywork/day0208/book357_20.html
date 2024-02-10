@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        window.onload=function(){
+        var output='';
+        for(var i=0;i<10;i++){
+            output +='<h2>Header-' + i+'</h2>';
+        }
+        
+       //1.순수 텍스트 형식으로 가져오기 방법(씌여진 그대로 출력) 
+       document.body.textContent=output;
+       
+       //2.html태그를 반영하여 가져오기 방법..<h2></h2>태그가 반영되어 글자크기 달라짐
+       //document.body.innerHTML=output;
+    };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
