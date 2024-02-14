@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 글씨체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Orbit&family=Stylish&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        /* h1{
+            font-family:'Dongle';
+            font-size: 40px;
+        } */
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            border: 3px solid gray;
+        }
+
+        th,td{
+            border: 1px solid gray;
+        }
+
+        #result{
+            font-family: 'Dongle';
+            width: 450px;
+            height: 200px;
+            border: 2px solid gray;
+            margin-top: 20px;
+            padding: 20px 20px;
+            font-size: 30px;
+        }
+
+    </style>
+    <script>
+        //이름
+        window.onload=function(){
+            document.getElementById("btnResult").onclick=function(){
+
+                var s="";
+                s="이름: "+document.getElementById("name").value+"<br>";
+
+                document.getElementById("result").innerHTML=s;
+            }
+        }
+        
+        //혈액형..라디오박스
+        var bloodStr="나의 혈액형은";
+
+        for(var i=0;i<tag.blood.length;i++)
+        {
+        if(tag.blood[i].checked)
+        {
+        bloodStr=tag.blood[i].value+" 입니다<br>";
+        }
+        }
+
+        document.getElementById("result").innerHTML="혈액형: "+bloodStr;
+
+        //가능언어
+        function lag()
+        {   
+            var langStr="가능언어;";
+            var flag=false;
+
+            for(var i=0;i<tag.lang.length;i++)
+            {
+                //선택이 되면 value값을 읽어서 hobbyStr에 추가
+                if(tag.lang[i].checked)
+                {
+                    flag=true;
+                    langStr+=tag.lang[i].value+"  ";
+                }
+            }
+
+            out.innerHTML="가능언어: "+langStr;
+        }
+    </script>
+    
+</head>
+<body>
+    
+    <!-- <form action="#" name="tag"> -->
+        <table>
+            <caption><b>폼태그 출력 과제_개인정보</b></caption>
+            <tr>
+                <th>이름</th>
+                <td>
+                    <input type="text" id="name" size="10" placeholder="이름">
+                </td>
+            </tr>
+
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="password" size="12" placeholder="비밀번호">
+                </td>
+            </tr>
+
+            <tr>
+                <th>혈액형</th>
+                <td>
+                    <input type="radio" name="blood" value="A">A형
+                    <input type="radio" name="blood" value="B">B형
+                    <input type="radio" name="blood" value="O">O형
+                    <input type="radio" name="blood" value="AB">AB형
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>가능언어</th>
+                <td>
+                    <input type="checkbox" name="lang" value="C언어">C언어
+                    <input type="checkbox" name="lang" value="JAVA">JAVA
+                    <input type="checkbox" name="lang" value="ORACLE">ORACLE
+                    <input type="checkbox" name="lang" value="Jquery">Jquery
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>입사일자</th>
+                <td>
+                    <input type="date" value="2022-01-01" id="ipsa">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="button" id="btnResult" value="결과출력">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="result">결과출력하는곳</div>
+</body>
+</html>
