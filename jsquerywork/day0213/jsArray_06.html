@@ -84,8 +84,42 @@
         
          for(var i=0;i<colors.length;i++)
          {
-            document.write("<font color='"+colors[i]+"' size='10'>"+colors+"</font>&nbsp;");
-         }
+            // document.write("<font color='"+colors[i]+"' size='10'>"+colors+"</font>&nbsp;");
+            document.write("<h2 style='color:"+colors[i]+";'>"+colors[i]+"</h2>");
+        }
+
+    </script>
+    <!-- <h2 style="color: red;">안녕</h2> -->
+
+    <h3>배열요소에 추가삭제</h3>
+    <script>
+        var foods=new Array();
+
+        foods.push("햄버거"); //배열마지막에 요소 추가..foods[0]="햄버거"와 같은 의미
+        foods.push("스테이크");
+        foods.push("파스타");
+
+        //출력
+        for(var i=0;i<foods.length;i++)
+        {
+            document.write("<h3>"+foods[i]+"</h3>");
+        }
+
+        document.write("==================================<br>")
+        foods.pop(); //마지막 배열값 제거
+        // foods.pop();
+        for(var i=0;i<foods.length;i++)
+        {
+            document.write("<h3>"+foods[i]+"</h3>");
+        }
+
+        document.write("==================================<br>")
+        foods.shift(); //배열의 첫번째 요소제거
+        //foods.unshift(); 배열의 처음에 요소추가
+        
+       console.log(foods);
+        
+
 
     </script>
 </body>
