@@ -4,7 +4,7 @@ div.lotto{
     border: 3px solid #7a3142;
     background-color: #b3546b;
     border-radius: 100px;
-    /* 테두리 둥글게 */
+    /*ㄴ 테두리 둥글게 */
     width: 100px;
     height: 100px;
     font-size: 2em;
@@ -14,4 +14,5 @@ div.lotto{
     font-weight: bold;
     color: white;
     box-shadow: 5px 5px 5px gray;
+    float: left;
 }
