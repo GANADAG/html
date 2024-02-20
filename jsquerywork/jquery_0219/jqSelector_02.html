@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Orbit&family=Stylish&display=swap" rel="stylesheet">
+   
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <title>Document</title>
+    <script>
+        $(function(){
+            // alert("load");
+            //alert("처음 로딩시 호출_window.onload와같다");
+            //css: 스타일 attr: 속성
+
+            //모든 b태그 글꼴크기 30px,글꼴변경
+            $("b").css("font-size","30px").css("font-family","dongle");
+
+            //b태그 중에서 클래스명이 rain인 태그 배경색을 오렌지색으로 변경
+            $("b.rain").css("background","orange");
+
+            //모든 h2태그의 보더변경하고 글자색 파랑색으로 변경
+            $("h2").css({
+                "border":"5px solid gray",
+                "color":"blue"
+            });
+
+            //이미지 src변경
+            //스타일 css속성은 attr
+            //모든 이미지 속성 변경
+            $("img").attr("src","../image/Food/1.jpg");
+
+            // $("img").css("width","200px");
+            $("img").attr("width","200px");
+
+            //한줄
+            $("img").attr("src","../image/Food/5.jpg").css("width","200px")
+            
+            //quiz1
+            //1.img태그중 likeimg의 이미지를 다른 이미지로 변경,스타일도 변경(width,border-radius,border,box-shadow)
+            $("img.likeimg").attr("src","../image/Food/3.jpg").css({
+                "width":"100px",
+                "border-radius": "50px",
+                "border":"5px solid red",
+                "box-shadow":"5px 5px 5px blue"
+            })
+            //2.nice라는 클래스를 사진 span태그의 배경,글자,글자크기 변경
+            $("span.nice").css({
+                "background":"purple",
+                "color":"brown",
+                "font-size":"2em"
+            })
+
+            //3.id가 loveimg인 이미지를 다른이미지로 변경하고 title을 '안녕 제이쿼리'로 변경
+            $("#loveimg").attr("src","../image/Food/10.jpg").attr("title","안녕제이쿼리");
+
+        })
+    </script>
+</head>
+<body>
+    <h2>caa,attr_jquery에서 가장 많이 사용하는 함수</h2>
+
+     <b class="rain">b tag class rain</b>
+     <br>
+     <span class="nice">span tag class nice222</span>
+     <br>
+     <h3 class="happy">h3 tag class happy</h3>   
+    <h2>이미지들</h2>
+    <b class="my">b 태그 클래스 마이</b>
+    <img src="">
+    <img src="" class="likeimg">
+    <img src="">
+    <img src="" title="" irum="" id="loveimg">
+</body>
+</html>
