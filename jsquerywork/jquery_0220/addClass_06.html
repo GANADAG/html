@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Orbit&family=Stylish&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 130px;
+            text-align: center;
+            line-height: 130px;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .hello_0{
+            border: 10px groove pink;
+            font-family: 'dongle';
+            background-color: orange;
+            color: blue;
+        }
+        .hello_1{
+            border: 10px groove green;
+            font-family: 'dongle';
+            background-color: gray;
+            color: purple;
+        }
+        .hello_2{
+            border: 10px groove magenta;
+            font-family: 'dongle';
+            background-color: orange;
+            color: blue;
+        }
+        .hello_3{
+            border: 10px groove pink;
+            font-family: 'dongle';
+            background-color: orange;
+            color: blue;
+        }
+        .hello_4{
+            border: 10px groove pink;
+            font-family: 'dongle';
+            background-color: orange;
+            color: blue;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("button:eq(0").click(function(){
+                $("div").each(function(idx){
+                    $(this).addClass("hello_"+idx);
+                })
+            })
+            
+        })
+        
+    </script>
+</head>
+<body>
+    <button type="button" class="btn btn-info">스타일적용</button>
+    <button type="button" class="btn btn-danger">스타일제거</button>
+
+    <div>안녕하세요</div>
+    <div>오늘은 화요일</div>
+    <div>each문 배우는중</div>
+    <div>점심뭐먹지</div>
+    <div>안녕하세요</div>
+
+    <!-- <script>
+        $("div").each(function(index){
+            $(this).addClass("hello_"+index);
+        })
+
+    </script> -->
+</body>
+</html>
