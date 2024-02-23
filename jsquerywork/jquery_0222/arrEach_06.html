@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Orbit&family=Stylish&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <title>Document</title>
+    <style>
+        div.box{
+            border: 5px solid brown;
+            margin-top: 20px;
+            width: 300px;
+            height: 150px;
+            padding: 20px 20px;
+            font-family: 'dongle';
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h3>배열반복시 사용하는 $.each문</h3>
+    <script>
+        var colors=["red","pink","blue","green","orange","gray"];
+
+        $.each(colors,function(i,elt){//i:인덱스 ele/elt: 엘리먼트(인덱스에 해당하는 아이템값)
+            var s="<h2 style='color:"+elt+";width=200px;'>"+elt+"</h2>";
+            document.write(s);
+
+            
+        })
+    </script>
+
+    <h3>배열복습이미지</h3>
+    <script>
+        var images=["1","3","5","7","11"];
+
+        $.each(images,function(i,elt){
+            var s="<img src='../image/쇼핑몰사진/"+elt+".jpg' width='100' height='100' class='rounded-circle'>";
+            document.write(s);
+        })
+    </script>
+
+    <h3>배열_object형 선언</h3>
+    <div id="out">ss</div>
+    <script>
+        var info=[{name:'최연희',hp:'010-111-2222',addr:'서울시 강남구'},
+        {name:'이현지',hp:'010-111-4444',addr:'서울시 송파구'},
+        {name:'이주형',hp:'010-222-5555',addr:'서울시 마포구'},
+        {name:'이윤수',hp:'010-333-6666',addr:'서울시 서초구'}];
+
+        var s="";
+        $.each(info,function(i,elt){
+            s+="<div class='box'>";
+                s+="이름: "+elt.name+"<br>";
+                s+="핸드폰: "+elt.hp+"<br>";
+                s+="주소: "+elt.addr+"<br>";
+                s+="</div>";
+        });
+
+        //출력
+        $("#out").html(s)
+    </script>
+</body>
+</html>
