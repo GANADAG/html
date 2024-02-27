@@ -77,23 +77,48 @@
         $(function(){
              var gun_sound=new Audio("../sound/fire.mp3"); //mp4 wav 확장자
 
-             //총 이미지 클릭시 
-
+             
+             //총 이미지 클릭시 (소리_play())
+             $(".gun").click(function(){
+                gun_sound.play();
+             })
              //0~11 사이의 난수발생
-
+             var n = parseInt(Math.random() * 12);
+            
              //해당 인덱스 미니언즈가 없을경우 "n번째 미니언즈는 이미 처리중"
-
-             //만약 아닐경우 "n번째 인형을 맞췄네요" 메세지출력 후 hide()
-
+             //만약 아닐경우 "n번째 인형을 맞췄네요" 메세지출력 후 hide();
              //$(".sunban img").eq(1).is(":hidden")==>true/false
-
-
+             if($(".sunban img").eq(n).is("hidden")){
+                $("#game_msg").html(n+1)+("번째 미니언즈는 이미 처리완료");  
+                }else{
+                    $("game_msg").html((n+1)+"번째 미니언즈를 맞추셨습니다");
+                    $(".sunban img").eq(n).hide();
+                }
              //12개 모두 맞추면 메세지창에 "YOUWIN!!" 출력
+                var cnt=0;
+                $(".sunban img").each(function(){
+                    if($(this).is(":hidden"))
+                    cnt++;
+                });
+
+                if(cnt==12){
+                    $("game_msg").html("you win")
+                }
+
+            });
 
              //지폐 클릭 시 해당 지폐 사라지게 하면서 
+             //12개의 미니언즈 다시 보이고 메세지 창 지워지게
+             $("money img").click(function(){
+                $(this).hide();
+                $(".sunban img").show();
+                $("#game_msg").empty();
+             })
 
-             //12개의 미니언즈 다시 보이고 메세지 창 지워지게 
-        })
+        
+             
+            
+    
     </script>
 </head>
 <body>
